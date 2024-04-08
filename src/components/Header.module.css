@@ -1,0 +1,77 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+  .menu{
+  background-color: var(--corPrincipal);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top:0;
+  flex-wrap: wrap;
+}
+.logo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.3rem 0.6rem;
+  font-size: 2rem;
+  color:var(--corClara);
+}
+.menuEsquerdo{
+  color: #fff;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuEsquerdo li{
+  padding: 0.3rem 0.6rem;
+  margin: 0.6rem;
+}
+.menuEsquerdo li:hover::after{
+  content: "";
+  width: 4rem;
+  height: 0.2rem;
+  display: block;
+  background-color: #fff;
+}
+.menuDireito{
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem;
+}
+.menuDireito a {
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.abrirConta{
+  display: flex;
+  background-color: var(--corClara);
+  color:var(--corEscura);
+  border-radius: 0.3rem;
+  text-wrap: nowrap;
+  align-items: center;
+  }
+.abrirConta:hover{
+  background-color: var(--corEscura);
+  color:var(--corClara);
+  transition: linear 0.15s;
+}
+
+.login{
+ color: #fff;
+ transition: color 0.5s;
+}
+.login:hover{
+  color:var(--corClara);
+ }
+ .logo:hover::after{
+  display: none !important;
+ }
+
+
+ 
+

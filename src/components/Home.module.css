@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400&display=swap');
+.fundoMundo{
+  background: url(../assets/mundo2.jpg);
+  background-size: cover;
+  background-position: center 65%;
+  height: calc(100vh - 67px);
+  position: relative;
+  margin-top: 65px;
+}
+.camada{
+  background: linear-gradient(rgba(255,255,255,0), rgba(37,48,3,0.65) );
+  height: calc(100vh - 67px);
+  z-index: 1;
+}
+.servicos{
+  display: flex;
+  justify-content: center;
+}
+.servico{
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.15rem;
+  font-family: 'Sono', monospace;
+}
+.servico + p::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 20px;
+  background-color: #55650f;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 860px) {
+  .servicos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .servico{
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .servico + p::before{
+    display: none;
+  }
+}
+.mapa{
+  width: 100%;
+  height: 75vh;
+}
+.subtitulo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--corEscura);
+  margin: 1rem;
+  text-align: center;
+}
